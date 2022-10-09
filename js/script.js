@@ -1,5 +1,5 @@
 let idPokemon = parseInt(document.querySelector('.pokemon_number').innerText);
-showPokemon(idPokemon || 151);
+showPokemon(idPokemon || '151');
 
 
 async function fetchPokemon(pokemon) {
