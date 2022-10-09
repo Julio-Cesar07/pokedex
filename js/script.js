@@ -34,8 +34,7 @@ function pokemonNotFind(){
 
     nameText.innerText = '??';
     idText.innerText = '';
-    gifLink.src = '../images/interrogacao.gif';
-
+    gifLink.src = 'https://tmssolucoesfinanceira.com/wp-content/uploads/2021/11/interrogacao.gif';
     idPokemon = 0;
 }
 
