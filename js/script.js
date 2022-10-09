@@ -24,7 +24,8 @@ function changeIdPokemon(idPokemon){
 
 function changeGifPokemon(gif){
     const gifLink = document.querySelector('.pokemon_image');
-    gifLink.src = gif ?? 'https://tmssolucoesfinanceira.com/wp-content/uploads/2021/11/interrogacao.gif';
+    //gifLink.src = gif ?? 'https://tmssolucoesfinanceira.com/wp-content/uploads/2021/11/interrogacao.gif';
+    gifLink.src = gif ? gif : 'https://tmssolucoesfinanceira.com/wp-content/uploads/2021/11/interrogacao.gif';
 }
 
 function pokemonNotFind(){
