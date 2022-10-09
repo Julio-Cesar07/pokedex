@@ -1,5 +1,3 @@
-Pokedex
-
-Feita em HTML, CSS e JavaScript
+# Pokedex
 
 acesse: https://julio-cesar07.github.io/pokedex/
