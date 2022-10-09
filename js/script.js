@@ -65,16 +65,10 @@ prevButton.addEventListener('click', () => {
     idPokemon <= 1 ? showPokemon(1) : showPokemon(idPokemon-1);
 });
 
+const formInput = document.querySelector('.input_search');
 const form = document.querySelector('.form');
 form.addEventListener('submit', e => {
     e.preventDefault();
+    showPokemon(formInput.value.toLowerCase());
     form.reset();
-})
-
-const formInput = document.querySelector('.input_search');
-formInput.addEventListener('keypress', e => {
-    const key = e.which || e.keyCode;
-    if(key == 13 && formInput.value != ''){
-       showPokemon(formInput.value.toLowerCase());
-    }
 })
