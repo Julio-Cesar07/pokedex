@@ -48,7 +48,7 @@ function changeAllTextPokemon(namePokemon){
 }
 
 async function showPokemon(pokemon){
-    const namePokemon = await fetchPokemon(pokemon);
+    const namePokemon = await fetchPokemon(pokemon.toLowerCase());
 
     namePokemon ? changeAllTextPokemon(namePokemon) : pokemonNotFind();
     
@@ -69,6 +69,6 @@ const formInput = document.querySelector('.input_search');
 const form = document.querySelector('.form');
 form.addEventListener('submit', e => {
     e.preventDefault();
-    showPokemon(formInput.value.toLowerCase());
+    showPokemon(formInput.value);
     form.reset();
 })
